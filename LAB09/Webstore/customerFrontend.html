@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Store</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<script src="formChecker.js"></script>
+	</head>
+
+	<body>
+		<h1>Web Store</h1>
+		<hr width=400 align=left></hr>
+
+		<form action="customerBackend.php" id="CART" method="post">
+		<p class="other">Login/Create Account</p>
+
+		<p>Username (Email) : </p>
+		<input id="user" type="text" name="Username">
+
+		<p>Password : </p>
+		<input id="pass" type="password" name="Password">
+
+		<br>
+		<hr width=400 align=left></hr>
+		<p class="other">Enter Quantity</p>
+
+		<p>Mechanical pencil Lead (10 pack): $2</p>
+		<input id="lead" type="number" name="leads" min="0" value="0">
+		<p>Notebook Paper (100 sheets) : $1</p>
+		<input id="paper" type="number" name="papers" min="0" value="0">
+		<p>Folders : $1</p>
+		<input id="folder" type="number" name="folders" min="0" value="0">
+		<br>
+		<hr width=400 align=left></hr>
+
+		<p class="other">Shipping Type</p>
+
+		  <input id="Seven" type="radio" name="ups" value="Free"> Free 7 Day Shipping<br>
+		  <input id="Three" type="radio" name="ups" value="Three-day"> $5.00 Three-day Shipping<br>
+ 		  <input id="One" type="radio" name="ups" value="Express"> $50.00 Overnight Shipping<br>
+
+		  <p></p>
+		  <input type="Reset" value="Reset">
+		  <button style="width:150" onclick="validate()">Submit</button>
+		</form>
+	</body>
+</html>
